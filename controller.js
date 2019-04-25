@@ -14,7 +14,7 @@ exports.users = function(req, res) {
 };
 
 exports.index = function(req, res) {
-    response.ok("Hello from the Node JS RESTful side!", res)
+    response.ok("Hello from the NodeJS RESTful side!", res)
 };
 
 exports.findUsers = function(req, res) {

@@ -2,7 +2,6 @@
 
 module.exports = function(app) {
     var todoList = require('./controller');
-    // var qs = require('querystring');
 
     app.route('/')
         .get(todoList.index);
@@ -10,6 +9,6 @@ module.exports = function(app) {
     app.route('/story')
         .get(todoList.users);
 
-    app.route('/story/:story_id')
+    app.route('/story/getTitleId=:story_id')
         .get(todoList.findUsers);
 };
