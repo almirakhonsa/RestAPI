@@ -2,6 +2,7 @@
 
 module.exports = function(app) {
     var todoList = require('./controller');
+    // var qs = require('querystring');
 
     app.route('/')
         .get(todoList.index);
